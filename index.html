@@ -20,37 +20,68 @@
         </div>
         <h3 class="panel">Panel de cliente</h3>
         <hr>
+        <button id="solicitar-presupuesto">SOLICITAR PRESUPUESTO</button>
+        <a href="cards.html">
+            <button id="planes-disponibles">PLANES DISPONIBLES</button>
+
+        </a>
         <button id="baja-servicio">BAJA DE SERVICIO</button>
-        <button id="planes-disponibles">PLANES DISPONIBLES</button>
     </div>
 
     <div id="baja-screen" class="screen" style="display: none;">
-        <div class="screenContainer">
-            <div class="lamentamos">
-                <h4>¡LAMENTAMOS QUE TE VAYAS!</h4>
-                <p>Pero agradecemos el tiempo que confiaste en nosotros.</p>
+        <div>
+            <!-- Encabezado con icono -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img class="robot" src="https://cdn-icons-png.flaticon.com/512/6667/6667576.png" alt="Chatbot Icono" width="90">
+                <h2 style="font-size: 26px; color: #2E3A59; font-weight: bold;">¡Lamentamos que te vayas!</h2>
+                <p style="color: #6B7280; font-size: 16px; margin-top: 10px;">Gracias por haber confiado en nosotros.</p>
             </div>
-            <div class="saludo">
-                <h3>Hola, <span class="highlight-text">cepaaprendizaje.com.ar</span></h3>
+        
+            <!-- Caja de información destacada -->
+            <div style="background: #ffffff; border: 1px solid #E5E7EB; border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                <p style="color: #374151; font-size: 15px; margin-bottom: 8px;">
+                    Hola, <strong style="color: #0078FF;">cepaaprendizaje.com.ar</strong>
+                </p>
+                <p style="color: #6B7280; font-size: 14px; margin-bottom: 15px;">Puedes descargar el documento con tus credenciales aquí:</p>
+                <div style="text-align: center;">
+                    <button id="download-button">
+                        Descargar Credenciales
+                    </button>
+                </div>
             </div>
-            <p>A continuación puedes descargar el documento con tus credenciales:</p>
-            <button id="download-button">Descargar Documento</button>
-            <div class="seguridad">
-                <p>⚠️ Por tu seguridad y la nuestra, recomendamos cambiar</p>
-                <p> las claves de acceso en los próximos días.</p>
+        
+            <!-- Línea divisoria -->
+            <hr style="border: none; height: 1px; background: #E5E7EB; margin: 25px 0;">
+        
+            <!-- Advertencia -->
+            <div style="display: flex; align-items: center; gap: 12px; background: #FFF4F4; border: 1px solid #FFBABA; border-radius: 12px; padding: 16px; margin-bottom: 20px;">
+                <p style="color: #B91C1C; font-size: 14px; margin: 0;">⚠️ Por tu seguridad y la nuestra, recomendamos cambiar tus claves de acceso en los próximos días.</p>
             </div>
-            <div class="servicioBaja">
-                <p>Al hacer clic en el botón, estás dando de baja el servicio de:</p>
-                <p class="planBasico"><span class="highlight-text">Plan Básico Mantenimiento Mensual</span>.</p>
+        
+            <!-- Información de baja -->
+            <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 16px; padding: 20px; margin-bottom: 25px;">
+                <p style="color: #374151; font-size: 14px; line-height: 1.6;">
+                    Al hacer clic en el botón, estás confirmando la baja del servicio:
+                    <strong style="color: #0078FF;">Plan Básico Mantenimiento Mensual</strong>.
+                </p>
+                <p style="color: #6B7280; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+                    Una vez confirmada, nuestro equipo no tendrá acceso ni responsabilidad sobre tu sitio.
+                </p>
             </div>
-            <div class="enAdelante">
-                <p>De aquí en adelante el equipo no tendrá más</p>
-                <p>acceso ni responsabilidad sobre el sitio.</p>
+        
+            <!-- Botón de acción principal -->
+            <div style="text-align: center;">
+                <button id="confirm-baja">
+                    Confirmar Baja
+                </button>
             </div>
-
-            <button id="confirm-baja">DARME DE BAJA</button>
         </div>
+        
     </div>
+
+    
+
+    
 
     <div id="modal" class="modal">
         <div class="modal-content">

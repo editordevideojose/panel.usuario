@@ -60,4 +60,16 @@ document.getElementById('confirm-baja').addEventListener('click', function() {
 
 
 
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', () => {
+      alert('¡Gracias por tu interés! Nos pondremos en contacto contigo pronto.');
+    });
+  });
+  
+
+
+
+
+
+
 

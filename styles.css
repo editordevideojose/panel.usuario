@@ -13,7 +13,8 @@ body {
     min-height: 100vh;
     text-align: center;
     color: #333;
-    flex-direction: column; /* Asegura que los elementos se apilen correctamente */
+    flex-direction: column;
+    /* Asegura que los elementos se apilen correctamente */
 }
 
 #main-screen {
@@ -24,9 +25,11 @@ body {
     border: solid 2px black;
     border-radius: 10px;
     padding: 80px 20px;
-    width: 25%; /* Ajusta el ancho a un porcentaje más flexible */
+    width: 25%;
+    /* Ajusta el ancho a un porcentaje más flexible */
     background-color: #333;
-    margin-bottom: 30px; /* Espaciado debajo */
+    margin-bottom: 30px;
+    /* Espaciado debajo */
 }
 
 .screenContainer {
@@ -79,18 +82,17 @@ button:hover {
 }
 
 #baja-servicio {
-    background-color: red;
+    background-color: rgb(255, 0, 60);
     color: white;
-    font-size: 18px;
 }
 
 #planes-disponibles {
     background-color: #1f80e0;
     color: white;
-    font-size: 18px;
 }
 
-#baja-servicio:hover, #planes-disponibles:hover {
+#baja-servicio:hover,
+#planes-disponibles:hover {
     background-color: #1761b3;
 }
 
@@ -98,8 +100,10 @@ button:hover {
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 70%; /* Cambié el ancho a un porcentaje menor */
-    max-width: 500px; /* Ajusta el valor según el ancho máximo que desees */
+    width: 70%;
+    /* Cambié el ancho a un porcentaje menor */
+    max-width: 500px;
+    /* Ajusta el valor según el ancho máximo que desees */
     padding: 30px;
     text-align: center;
 }
@@ -117,12 +121,16 @@ h3 {
 }
 
 .lamentamos {
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho */
     background-color: #333;
     color: aliceblue;
-    padding: 20px 0; /* Ajusta el padding si es necesario */
-    margin-top: 0; /* Elimina cualquier margen superior */
-    position: relative; /* Asegura que se posicione correctamente en la parte superior */
+    padding: 20px 0;
+    /* Ajusta el padding si es necesario */
+    margin-top: 0;
+    /* Elimina cualquier margen superior */
+    position: relative;
+    /* Asegura que se posicione correctamente en la parte superior */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-weight: 300;
@@ -130,7 +138,8 @@ h3 {
 
 .lamentamos p {
     color: aliceblue;
-    margin: 0; /* Elimina márgenes en los párrafos */
+    margin: 0;
+    /* Elimina márgenes en los párrafos */
 }
 
 
@@ -148,12 +157,9 @@ h3 {
 button#download-button {
     background-color: #333;
     color: white;
-    width: 45%;
-    margin: 10px 0px;
+    width: 60%;
     font-size: 80%;
     padding: 15px;
-
-    
 }
 
 button#download-button:hover {
@@ -164,8 +170,8 @@ button#confirm-baja {
     background-color: #ff5346;
     color: white;
     font-size: 18px;
-    margin-top: 20px;
-    width: 45%;
+    margin-top: 0px;
+    width: 60%;
     font-size: 80%;
     padding: 15px;
 
@@ -260,19 +266,154 @@ button#finalizar:hover {
     }
 }
 
-.saludo{
+.saludo {
     margin: 20px 0;
 }
 
-.servicioBaja{
-margin-bottom: 10px;
+.servicioBaja {
+    margin-bottom: 10px;
 }
 
-.enAdelante{
+.enAdelante {}
 
+.planBasico {}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
 }
 
-.planBasico{
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 23%; /* Ajusta el ancho, considerando los márgenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin: 20px; /* Margen consistente entre las tarjetas */
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.price {
+    font-size: 24px;
+    color: #00aaff;
+    margin: 10px 0 0px 0px;
+}
+
+.contenidoCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style: none;
+    padding: 10px 35px;
+    text-align: left;
+}
+
+ul li {
+    margin: 8px 0;
+    font-size: 90%;
+    color: #3f3f3f;
+}
+
+.btn {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #0077cc;
+}
+
+.card-logo {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+}
+
+.solapaTitulo{
+    background-color: #4CAF50;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.basico{
+    background-color: rgb(0, 140, 255);
+}
+
+.estandar{
+    background-color: gold;
+}
+
+.premium{ 
+    background-color: #313131;
+    h2{
+        color: aliceblue;
+    }
+}
+
+.shopify, .woocommerce, .airbnb{
+    background-color: #aaa;
+}
+
+span{
+    font-size: 150%;
+    font-weight: 800;
+}
+
+.listaIncluye{
+    text-align: left;
+    display: flex;
+}
+
+.robot{
+    margin-bottom: 15px;
+    width: 20%;
 }
 
 
