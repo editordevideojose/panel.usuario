@@ -13,18 +13,6 @@ document.getElementById('download-button').addEventListener('click', function() 
 document.getElementById('confirm-baja').addEventListener('click', function() {
     // Mostrar modal
     document.getElementById('modal').style.display = 'block';
-
-    // Enviar correo
-    emailjs.send("service_dvscbi2", "template_8m367ss", {
-        message: "El usuario dio de baja el servicio"
-    })
-    .then(() => {
-        alert("Correo enviado con éxito. Baja realizada.");
-    })
-    .catch((error) => {
-        console.error("Error al enviar el correo:", error);
-        alert("Hubo un problema al enviar el correo. Intenta nuevamente.");
-    });
 });
 
 document.getElementById('finalizar').addEventListener('click', function() {
@@ -43,3 +31,33 @@ window.addEventListener('click', function(event) {
         document.getElementById('modal').style.display = 'none';
     }
 });
+
+
+// Iniciar EmailJS con tu Public Key
+emailjs.init('yAEqylTA0ThQjSFJ_'); // Reemplaza con tu Public Key
+
+document.getElementById('confirm-baja').addEventListener('click', function() {
+    // Definir parámetros del correo a enviar
+    const templateParams = {
+        from_name: "sat media", // Nombre de la empresa (o el que sea necesario)
+        message: "El usuario ha solicitado la baja del servicio Plan Básico Mantenimiento Mensual.", // El mensaje que deseas enviar
+        reply_to: "cepaaprendizaje.com.ar", // Correo del usuario o el que desees
+    };
+
+    // Enviar el correo utilizando EmailJS
+    emailjs.send('service_dvscbi2', 'template_qxvcc64', templateParams)
+        .then(function(response) {
+            console.log('Éxito en el envío del correo:', response);
+            document.getElementById('modal').style.display = 'block'; // Mostrar el modal
+        }, function(error) {
+            console.log('Error en el envío del correo:', error);
+        });
+});
+
+
+
+
+
+
+
+
