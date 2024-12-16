@@ -274,9 +274,6 @@ button#finalizar:hover {
     margin-bottom: 10px;
 }
 
-.enAdelante {}
-
-.planBasico {}
 
 
 
@@ -413,6 +410,51 @@ span{
 
 .robot{
     width: 20%;
+}
+
+.btnSolicitar{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    
+}
+
+.partners{
+    background-color: rgb(229, 229, 229);
+    border-radius: 10px;
+}
+
+.off{
+    background-color: greenyellow;
+    font-size: 70%;
+    padding: 3px 0px;
+    color: #3F3F3F;
+}
+
+.solapaPartners{
+    background-color: gold;
+}
+
+.desde{
+    font-size: 50%;
+    color: #aaa;
+}
+
+.transparent{
+color: #FFFFFF;
+font-size: 50%;
+
+}
+
+.solapaPartners2{
+    background-color: rgb(102, 0, 255);
+    color: aliceblue;
+}
+
+.solapaPartners3{
+    background-color: rgb(15, 147, 0);
+    color: aliceblue;
 }
 
 
