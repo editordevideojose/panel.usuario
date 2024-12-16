@@ -21,15 +21,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    border: solid 2px black;
+    /* gap: 30px; */
     border-radius: 10px;
-    padding: 80px 20px;
+    padding: 40px 20px;
     width: 25%;
     /* Ajusta el ancho a un porcentaje más flexible */
     background-color: #333;
     margin-bottom: 30px;
     /* Espaciado debajo */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
 }
 
 .screenContainer {
@@ -46,7 +47,7 @@ body {
 
 img {
     width: 30%;
-    margin-bottom: -4px;
+    margin-bottom: 10px;
 }
 
 .panel {
@@ -56,13 +57,39 @@ img {
 }
 
 .btnPanel{
-    gap: 15px;
     width: 100%;
+    h5{
+        color: aliceblue;
+        font-weight: 200;
+        margin: 10px 0px;
+
+    }
+}
+.containerConsultas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.generarConsulta {
+    background-color: aliceblue;
+    color: #333333;
+    display: flex;
+    justify-content: center;
 }
 
+
+
+.containerConsultas2 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    color: #333333;
+}
+
+
 hr {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 25vw;
+    margin: 20px 0px 30px 0px;
     padding: 0;
 }
 
@@ -71,15 +98,19 @@ p {
     font-size: 80%;
 }
 
+.containerBotones{
+}
+
 button {
-    width: 80%;
+    width: 70%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    padding: 15px 30px;
-    border-radius: 8px;
+    padding: 13px 20px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 15px;
 }
 
 button:hover {
@@ -92,13 +123,17 @@ button:hover {
 }
 
 #planes-disponibles {
-    background-color: #1f80e0;
-    color: white;
+    background-color: #1761b3;
+    color: aliceblue;
 }
 
 #baja-servicio:hover,
 #planes-disponibles:hover {
     background-color: #1761b3;
+}
+
+#pagar{
+    background-color: green;
 }
 
 .screen {
@@ -278,6 +313,7 @@ button#finalizar:hover {
 .servicioBaja {
     margin-bottom: 10px;
 }
+
 
 
 
