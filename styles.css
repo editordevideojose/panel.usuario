@@ -50,6 +50,12 @@ img {
     margin-bottom: 10px;
 }
 
+
+
+.h1sub{
+    font-weight: 200;
+    margin-top: -5px;
+}
 .panel {
     color: aliceblue;
     margin: 0;
