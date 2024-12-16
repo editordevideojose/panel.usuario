@@ -55,6 +55,11 @@ img {
     padding: 0;
 }
 
+.btnPanel{
+    gap: 15px;
+    width: 100%;
+}
+
 hr {
     width: 100%;
     margin-bottom: 20px;
