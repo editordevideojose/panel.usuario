@@ -52,30 +52,33 @@ img {
 
 
 
-.h1sub{
+.h1sub {
     font-weight: 200;
-    margin-top: -5px;
 }
+
 .panel {
     color: aliceblue;
     margin: 0;
     padding: 0;
 }
 
-.btnPanel{
+.btnPanel {
     width: 100%;
-    h5{
+
+    h5 {
         color: aliceblue;
         font-weight: 200;
         margin: 10px 0px;
 
     }
 }
+
 .containerConsultas {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .generarConsulta {
     background-color: aliceblue;
     color: #333333;
@@ -92,6 +95,23 @@ img {
     color: #333333;
 }
 
+.containerDivider {
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-divider {
+    height: 1px;
+    /* Grosor en el centro */
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+    /* Gradiente para los extremos finos */
+    margin: 10px 0px 20px 0px;
+    width: 80%;
+    /* Longitud de la línea */
+    display: flex;
+}
+
+
 
 hr {
     width: 25vw;
@@ -104,8 +124,7 @@ p {
     font-size: 80%;
 }
 
-.containerBotones{
-}
+.containerBotones {}
 
 button {
     width: 70%;
@@ -138,7 +157,7 @@ button:hover {
     background-color: #1761b3;
 }
 
-#pagar{
+#pagar {
     background-color: green;
 }
 
@@ -337,6 +356,11 @@ body {
     text-align: center;
 }
 
+.tituloPlanes {
+    font-size: 300%;
+    margin: 30px 0px 40px 0px;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -345,6 +369,27 @@ body {
 h1 {
     margin-top: 20px;
 }
+
+.mediosDePago {
+    background-color: #ADFF30;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    h4{
+        margin: auto;
+        font-weight: 100;
+        font-size: 80%;
+    }
+
+    span {
+        font-weight: bold;
+        font-size: 100%;
+
+    }
+}
+
+
 
 .cards {
     display: flex;
@@ -359,10 +404,12 @@ h1 {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 23%; /* Ajusta el ancho, considerando los márgenes */
+    width: 23%;
+    /* Ajusta el ancho, considerando los márgenes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    margin: 20px; /* Margen consistente entre las tarjetas */
+    margin: 20px;
+    /* Margen consistente entre las tarjetas */
     display: flex;
     flex-direction: column;
 }
@@ -419,92 +466,90 @@ ul li {
     display: block;
 }
 
-.solapaTitulo{
+.solapaTitulo {
     background-color: #4CAF50;
     padding: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.basico{
+.basico {
     background-color: rgb(0, 140, 255);
 }
 
-.estandar{
+.estandar {
     background-color: gold;
 }
 
-.premium{ 
+.premium {
     background-color: #313131;
-    h2{
+
+    h2 {
         color: aliceblue;
     }
 }
 
-.shopify, .woocommerce, .airbnb{
+.shopify,
+.woocommerce,
+.airbnb {
     background-color: #aaa;
 }
 
-span{
+span {
     font-size: 150%;
     font-weight: 800;
 }
 
-.listaIncluye{
+.listaIncluye {
     text-align: left;
     display: flex;
 }
 
-.robot{
+.robot {
     width: 20%;
 }
 
-.btnSolicitar{
+.btnSolicitar {
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px 20px;
 
-    
+
 }
 
-.partners{
+.partners {
     background-color: rgb(229, 229, 229);
     border-radius: 10px;
 }
 
-.off{
+.off {
     background-color: greenyellow;
     font-size: 70%;
     padding: 3px 0px;
     color: #3F3F3F;
 }
 
-.solapaPartners{
+.solapaPartners {
     background-color: gold;
 }
 
-.desde{
+.desde {
     font-size: 50%;
     color: #aaa;
 }
 
-.transparent{
-color: #FFFFFF;
-font-size: 50%;
+.transparent {
+    color: #FFFFFF;
+    font-size: 50%;
 
 }
 
-.solapaPartners2{
+.solapaPartners2 {
     background-color: rgb(102, 0, 255);
     color: aliceblue;
 }
 
-.solapaPartners3{
+.solapaPartners3 {
     background-color: rgb(15, 147, 0);
     color: aliceblue;
 }
-
-
-
-
-
