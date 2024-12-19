@@ -370,12 +370,46 @@ h1 {
     margin-top: 20px;
 }
 
-.mediosDePago {
-    background-color: #ADFF30;
+.articulo {
+    background-color: #313131;
+    color: #E5E5E5;
     width: 100vw;
-    height: 5vh;
+    height: 4vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    .contenedorBtn{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    a{
+        width: 38%;
+        height: 3vh;
+        text-align: center;
+        background-color: #ADFF30;
+        color:#313131 ;
+        font-weight: 600;
+        font-size: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 80%;
+        text-decoration: none;
+    }
+}
+
+.mediosDePago {
+    background-color: #E5E5E5;
+    width: 100vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     h4{
         margin: auto;
         font-weight: 100;
@@ -385,7 +419,6 @@ h1 {
     span {
         font-weight: bold;
         font-size: 100%;
-
     }
 }
 
@@ -553,3 +586,8 @@ span {
     background-color: rgb(15, 147, 0);
     color: aliceblue;
 }
+
+
+
+
+
