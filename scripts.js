@@ -5,10 +5,14 @@ document.getElementById('baja-servicio').addEventListener('click', function() {
 
 document.getElementById('download-button').addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'ruta/a/tu/documento.pdf'; // Reemplaza esta ruta por la correcta.
-    link.download = 'credenciales.pdf';
+    link.href = 'https://drive.google.com/uc?export=download&id=1ppew1ieiEZJHyUZpw3NfiDfryaM_DbII'; // Enlace de descarga.
+    link.download = 'credenciales.pdf'; // Nombre del archivo.
     link.click();
 });
+
+
+
+
 
 document.getElementById('confirm-baja').addEventListener('click', function() {
     // Mostrar modal

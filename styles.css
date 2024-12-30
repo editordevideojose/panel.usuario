@@ -124,7 +124,6 @@ p {
     font-size: 80%;
 }
 
-.containerBotones {}
 
 button {
     width: 70%;
@@ -379,18 +378,20 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 80%;
-    .contenedorBtn{
+
+    .contenedorBtn {
         width: 8%;
         display: flex;
         justify-content: flex-start;
         margin-left: 10px;
     }
-    a{
+
+    a {
         width: 100%;
         height: 3vh;
         text-align: center;
         background-color: #ADFF30;
-        color:#313131 ;
+        color: #313131;
         font-weight: 600;
         font-size: 80%;
         display: flex;
@@ -412,13 +413,14 @@ h1 {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     gap: 50px;
-    .pagoContainer{
+
+    .pagoContainer {
         display: flex;
         align-items: center;
         text-align: center;
     }
 
-    h4{
+    h4 {
         font-weight: 100;
         font-size: 80%;
         display: flex;
@@ -441,13 +443,13 @@ h1 {
     align-items: stretch;
 }
 
-.h2Container{
+.h2Container {
     width: 100%;
     background-color: rgb(229, 229, 229);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-margin-top: 20px;
-padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .card {
@@ -606,7 +608,16 @@ span {
     color: aliceblue;
 }
 
+.preguntaCard{
+    color: #0E9300;
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+}
 
-
-
-
+.preguntaCard2{
+    color: #b19700;
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+}
