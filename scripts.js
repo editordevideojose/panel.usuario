@@ -76,4 +76,17 @@ document.querySelectorAll('.btn').forEach(button => {
 
 
 
+  function abrirModal() {
+    document.getElementById('miModal').style.display = 'block';
+  }
 
+  function cerrarModal() {
+    document.getElementById('miModal').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('miModal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  }

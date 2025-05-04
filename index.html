@@ -18,13 +18,14 @@
         <div>
             <img src="logo-sat-we-media--600x252.png" alt="">
         </div>
-        <h3 class="panel">Panel de cliente</h3>
-        <hr>
+        <br>
+        <h5 class="panel" style="font-weight: 300;">¿En qué te ayudamos hoy?</h5>
+        <br>
         <div class="btnPanel">
             <div class="containerBotones">
-                <button id="solicitar-presupuesto">Generar consulta</button>
-                <button id="solicitar-presupuesto">Programar reunión</button>
-                <button id="solicitar-presupuesto">Solicitar presupuesto</button>
+                <button id="solicitar-presupuesto" onclick="abrirModal()">Generar consulta</button>
+                <button id="solicitar-presupuesto" onclick="abrirModal()">Programar reunión</button>
+                <button id="solicitar-presupuesto" onclick="abrirModal()">Solicitar presupuesto</button>
             </div>
             <div class="containerDivider">
                 <div class="gradient-divider"></div>              
@@ -34,7 +35,7 @@
                     <button id="planes-disponibles">Planes disponibles</button>
                 </a>
                 <button id="baja-servicio">Baja del servicio</button>
-                <button id="pagar">PAGAR</button>
+                <button id="pagar" onclick="abrirModal()">PAGAR</button>
             </div>
 
         </div>
@@ -45,8 +46,9 @@
             <!-- Encabezado con icono -->
             <div style="text-align: center; margin-bottom: 30px;">
                 <img class="robot" src="robot-sonriente-agitando-su-mano-saludo-ai-generativo_407474-13437.png"
-                    alt="Chatbot Icono" width="90">
-                <hr>
+                    alt="Chatbot Icono" width="100">
+                <hr id="bajaLinea">
+                <br>
                 <h2 style="font-size: 26px; color: aliceblue; font-weight: bold;">¡Lamentamos que te vayas!</h2>
                 <p style="color: #bababa; font-size: 16px; margin-top: 5px;">Gracias por haber confiado en nosotros.</p>
             </div>
@@ -111,6 +113,15 @@
             </div>
         </div>
     </div>
+
+    <div id="miModal" class="custom-modal">
+        <div class="custom-modal-content">
+          <div class="custom-modal-icon">⚠️</div>
+          <h2>No disponible en tu plan</h2>
+          <p>Necesitas un ID de cliente para realizar la consulta</p>
+          <button onclick="cerrarModal()">ACEPTAR</button>
+        </div>
+      </div>
 
     <script src="scripts.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
